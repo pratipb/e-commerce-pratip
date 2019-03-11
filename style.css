@@ -26,7 +26,15 @@ header a {
     bottom: 10px;
 }
 
-nav {
-    display: flex;
+.menu-list {
     justify-content: space-around;
+    display: flex;
+    list-style-type: none;
+    margin-top: 4em;
+    padding: 0 30em 0 30em;
+}
+
+.menu-list  a {
+    text-decoration: none;
+    color: black;
 }
