@@ -49,6 +49,8 @@ header a {
 
 .mens-wear {
     text-align: center;
+    height: 34em;
+
 }
 
 .mens-wear h3 {
@@ -60,4 +62,20 @@ header a {
     color: black;
     border: 2px solid black;
     padding: 1em 2em 1em 2em;
+}
+
+.ladies-img {
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.ladies-wear {
+    text-align: center;
+}
+
+.ladies-wear h3 {
+    height: 3em;
 }
