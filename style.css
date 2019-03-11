@@ -11,6 +11,10 @@ header {
     position: relative;
 }
 
+header>p {
+    display: none;
+}
+
 header a {
     font-size: 18px;
     font-weight: 600;
@@ -125,4 +129,41 @@ footer p {
     background-color: black;
     color: white;
     padding: 1em;
+}
+
+@media all and (min-width:500px) and (max-width:800px) {
+    .mens-wear {
+        height: 23em;
+    }
+    .ladies-wear {
+        height: 23em;
+    }
+    body {
+        width: 60em;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-list {
+        justify-content: space-around;
+        display: flex;
+        list-style-type: none;
+        margin-top: 4em;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        display: none;
+    }
+    header {
+        display: flex;
+    }
+    .mens-wear {
+        height: 17em;
+    }
+    .ladies-wear {
+        height: 17em;
+    }
 }
