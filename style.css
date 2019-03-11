@@ -34,15 +34,30 @@ header a {
     padding: 0 30em 0 30em;
 }
 
-.menu-list  a {
+.menu-list a {
     text-decoration: none;
     color: black;
 }
 
-.mens-img{
+.mens-img {
     object-fit: contain;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+.mens-wear {
+    text-align: center;
+}
+
+.mens-wear h3 {
+    height: 3em;
+}
+
+.shop-link {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 1em 2em 1em 2em;
 }
