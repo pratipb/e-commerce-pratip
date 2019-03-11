@@ -50,7 +50,6 @@ header a {
 .mens-wear {
     text-align: center;
     height: 34em;
-
 }
 
 .mens-wear h3 {
@@ -74,8 +73,56 @@ header a {
 
 .ladies-wear {
     text-align: center;
+    height: 34em;
 }
 
 .ladies-wear h3 {
     height: 3em;
+    /* height: 34em; */
+}
+
+.tshirt {
+    display: flex;
+}
+
+.mens-tshirt {
+    display: inline;
+}
+
+.tshirt-men {
+    object-fit: contain;
+    width: 50%;
+}
+
+.tshirt-ladies {
+    object-fit: contain;
+    width: 50%;
+}
+
+.catalog {
+    display: flex;
+    justify-content: space-around;
+    height: 5em;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: grey;
+    display: block;
+}
+
+footer p {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 1em;
 }
