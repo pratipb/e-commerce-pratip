@@ -26,6 +26,11 @@ header a {
     color: black;
 }
 
+header img {
+    height: auto;
+    width: 25px;
+}
+
 .back-logo {
     display: none;
 }
@@ -48,7 +53,7 @@ header a {
 
 .account {
     grid-area: 3 / 1 / 4 / 2;
-    padding: 1em 7em 0 7em;
+    padding: 1em 4em 0 20em;
 }
 
 .form-input {
@@ -78,7 +83,7 @@ header a {
 
 .payment {
     grid-area: 3 / 2 / 4 / 3;
-    padding: 1em 7em 0 7em;
+    padding: 1em 17em 0 6em;
 }
 
 .list {

@@ -24,6 +24,11 @@ header a {
     color: black;
 }
 
+header img {
+    height: auto;
+    width: 25px;
+}
+
 .cart-logo {
     position: absolute;
     right: 0;
@@ -131,29 +136,7 @@ footer p {
     padding: 1em;
 }
 
-@media all and (min-width:500px) and (max-width:800px) {
-    .mens-wear {
-        height: 23em;
-    }
-    .ladies-wear {
-        height: 23em;
-    }
-    body {
-        width: 60em;
-    }
-    nav {
-        display: flex;
-        justify-content: center;
-    }
-    .menu-list {
-        justify-content: space-around;
-        display: flex;
-        list-style-type: none;
-        margin-top: 4em;
-    }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     nav {
         display: none;
     }
@@ -165,5 +148,27 @@ footer p {
     }
     .ladies-wear {
         height: 17em;
+    }
+}
+
+@media all and (min-width:500px) and (max-width:800px) {
+    .mens-wear {
+        height: 23em;
+    }
+    .ladies-wear {
+        height: 23em;
+    }
+    body {
+        width: 62em;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-list {
+        justify-content: space-around;
+        display: flex;
+        list-style-type: none;
+        margin-top: 4em;
     }
 }

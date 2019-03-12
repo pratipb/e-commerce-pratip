@@ -27,6 +27,11 @@ header a {
     color: black;
 }
 
+header img {
+    height: auto;
+    width: 25px;
+}
+
 nav {
     grid-area: 2 / 1 / 3 / 3;
 }
