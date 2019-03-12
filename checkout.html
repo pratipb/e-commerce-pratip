@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <header>
-            <div class="back-logo"><a href="#">&#8678;</a></div>
+            <div class="back-logo"><a href="#">&#9776;</a></div>
             <div>
                 <h1><a href="#">SHOP</a></h1>
             </div>
@@ -24,37 +24,38 @@
             <h4>Checkout</h4>
             <p>Shop is a demo app - form data will not be sent</p>
         </div>
-
         <div class="account">
-            <h5>Account Information</h5>
             <form>
-                <input class="form-input" type="text" name="Email" value="Email"><br>
-                <input class="form-input" type="text" name="Phone Number" value="Phone Number">
-            </form>
-            <br><br>
-            <h5>Shipping Address</h5>
-            <form>
-                <input class="form-input" type="text" name="Address" value="Address"><br>
-                <input class="form-input" type="text" name="City" value="City"><br>
-                <input class="input" type="text" name="State" value="State/Province"><input class="input" type="text"
-                    name="Zip" value="Zip/Postal Code">
-            </form>
-            <h6>Country</h6>
-            <select class="drop-down">
-                <option value="United States">United States</option>
-                <option value="Canada">Canada</option>
-            </select>
-            <h5>Billing Address</h5>
-            <input type="checkbox" name="address" value="different">
-            Use different billing address<br>
+
+                <h5>Account Information</h5>
+
+                <input class="form-input" type="email" name="Email" placeholder="Email" required><br>
+                <input class="form-input" type="text" name="Phone Number" placeholder="Phone Number" required>
+
+                <br><br>
+                <h5>Shipping Address</h5>
+
+                <input class="form-input" type="text" name="Address" placeholder="Address" required><br>
+                <input class="form-input" type="text" name="City" placeholder="City" required><br>
+                <input class="input" type="text" name="State" placeholder="State/Province"><input class="input" type="text"
+                    name="Zip" placeholder="Zip/Postal Code">
+
+                <h6>Country</h6>
+                <select class="drop-down">
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                </select>
+                <h5>Billing Address</h5>
+                <input type="checkbox" name="address" value="different">
+                Use different billing address<br>
         </div>
 
         <div class="payment">
             <h5>Payment Method</h5>
-            <form>
-                <input class="form-input" type="text" name="Name" value="Cardholder Name"><br>
-                <input class="form-input" type="text" name="Card Number" value="Card Number">
-            </form>
+
+            <input class="form-input" type="text" name="Name" placeholder="Cardholder Name" required><br>
+            <input class="form-input" type="text" name="Card Number" placeholder="Card Number" required>
+
             <h6>Expiry</h6>
             <select class="list">
                 <option value="jan">Jan</option>
@@ -86,16 +87,21 @@
             <input class="cvv-list" type="text" name="CVV" value="CVV">
             <br><br>
             <h5>Order Summary</h5>
-            <div class="t-shirt">
-                <p>Anvil L/S Crew Neck - Grey</p>
-                <p>22.15$</p>
+            <div class="summary">
+                <div class="t-shirt">
+                    <p>Anvil L/S Crew Neck - Grey</p>
+                    <p>22.15$</p>
+                </div>
+                <div class="total">
+                    <p>Total</p>
+                    <p>22.15$</p>
+                </div>
             </div>
-            <div class="t-shirt">
-                <p>Total</p>
-                <p>22.15$</p>
-            </div>
-            <button class="place-order" type="button">PLACE ORDER</button>
+            <div class="adding"><input type="submit" value="PLACE ORDER" class="place-order"></div>
+            </form>
         </div>
+
+
     </div>
 </body>
 

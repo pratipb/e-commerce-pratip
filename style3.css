@@ -109,9 +109,80 @@ header a {
     font-size: 13px;
 }
 
+.total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total p {
+    font-size: 13px;
+}
+
 .place-order {
     margin-top: 2em;
     border: 2px solid;
     background-color: white;
     padding: 1em 2em 1em 2em;
 }
+
+@media (max-width:767px) {
+    /* .checkout {
+        grid-area: 2 / 1 / 3 / 3;
+        text-align: center;
+    } */
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account {
+        grid-area: 3 / 1 / 4 / 2;
+        padding: 1em 1em 0 1em;
+    }
+
+    .payment {
+        grid-area: 3 / 2 / 4 / 3;
+        padding: 1em 1em 0 1em;
+    }
+
+    .adding {
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .place-order {
+        width: 100%;
+        padding: 1em;
+        color: white;
+        background-color: black;
+    }
+
+    .back-logo {
+        display: inline;
+        position: absolute;
+        left: 0;
+    }
+
+    .checkout {
+        margin-top: 0;
+    }
+
+    .summary {
+            margin-bottom: 3em;
+    }
+}
+
+@media all and (min-width:500px) and (max-width:800px) {
+    .account {
+        padding: 1em 1em 0 1em;
+    }
+
+    .payment {
+        padding: 1em 1em 0 1em;
+    }
+}
+
