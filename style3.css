@@ -80,3 +80,38 @@ header a {
     grid-area: 3 / 2 / 4 / 3;
     padding: 1em 7em 0 7em;
 }
+
+.list {
+    height: 3em;
+    border: none;
+    border-bottom: 1px solid;
+    color: grey;
+    width: 32%;
+    background-color: white;
+}
+
+.cvv-list {
+    height: 2.75em;
+    border: none;
+    border-bottom: 1px solid;
+    color: grey;
+    width: 33%;
+    background-color: white;
+}
+
+.t-shirt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.t-shirt p {
+    font-size: 13px;
+}
+
+.place-order {
+    margin-top: 2em;
+    border: 2px solid;
+    background-color: white;
+    padding: 1em 2em 1em 2em;
+}
