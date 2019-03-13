@@ -230,7 +230,13 @@ form input:focus, .box input:valid {
     /* width:40%    */
 }
 
-form 
+form  select:focus {
+    border-bottom: 2px solid black;
+}
+
+.payment select:focus {
+    border-bottom: 2px solid black;
+}
 
 @media (max-width:767px) {
     header {
