@@ -83,11 +83,13 @@ nav {
 }
 
 .option {
-    width: 15em;
+    width: 80%;
     background-color: transparent;
     /* opacity: 1.0; */
     border: none;
     height: 3.6em;
+    outline: none;
+    margin-left: 3em;
 }
 
 .size {
@@ -95,22 +97,27 @@ nav {
     margin-top: 1.5em;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    width: 80%;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .option2 {
-    width: 12.1em;
+    width: 80%;
     background-color: transparent;
     opacity: 1.0;
     border: none;
     height: 3.6em;
+    outline: none;
 }
 
 .quantity {
     height: 3em;
     /* padding-top: 1em; */
     border-bottom: 1px solid;
-    width: 80%;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .description {
@@ -174,6 +181,44 @@ nav {
         background-color: black;
         height: 3em;
         font-size: 1em;
+    }
+
+    .size {
+        height: 3em;
+        margin-top: 1.5em;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+
+    .option {
+        width: 19em;
+        background-color: transparent;
+        /* opacity: 1.0; */
+        border: none;
+        height: 1em;
+        outline: none;
+        margin-left: 3em;
+    }
+
+    .quantity {
+        height: 3em;
+        /* padding-top: 1em; */
+        border-bottom: 1px solid;
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+
+    .option2 {
+        width: 20.1em;
+        background-color: transparent;
+        opacity: 1.0;
+        border: none;
+        height: 3.6em;
+        outline: none;
     }
     
 }

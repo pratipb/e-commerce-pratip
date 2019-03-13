@@ -148,6 +148,7 @@ header img {
     color: black;
     margin-bottom: 0;
     border: 2px solid;
+    width: 50%;
 }
 
 #checkbox {
@@ -228,6 +229,8 @@ form input:focus, .box input:valid {
     display: inline-block;
     /* width:40%    */
 }
+
+form 
 
 @media (max-width:767px) {
     header {
