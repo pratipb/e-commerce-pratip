@@ -25,81 +25,104 @@
             <h4>Checkout</h4>
             <p>Shop is a demo app - form data will not be sent</p>
         </div>
-        <div class="account">
-            <form>
+        <div class="box">
+            <div class="account">
+                <form>
 
-                <h5>Account Information</h5>
-
-                <input class="form-input" type="email" name="Email" placeholder="Email" required><br>
-                <input class="form-input" type="text" name="Phone Number" placeholder="Phone Number" required>
-
-                <br><br>
-                <h5>Shipping Address</h5>
-
-                <input class="form-input" type="text" name="Address" placeholder="Address" required><br>
-                <input class="form-input" type="text" name="City" placeholder="City" required><br>
-                <input class="input" type="text" name="State" placeholder="State/Province"><input class="input" type="text"
-                    name="Zip" placeholder="Zip/Postal Code">
-
-                <h6>Country</h6>
-                <select class="drop-down">
-                    <option value="United States">United States</option>
-                    <option value="Canada">Canada</option>
-                </select>
-                <h5>Billing Address</h5>
-                <input type="checkbox" name="address" value="different">
-                Use different billing address<br>
-        </div>
-
-        <div class="payment">
-            <h5>Payment Method</h5>
-
-            <input class="form-input" type="text" name="Name" placeholder="Cardholder Name" required><br>
-            <input class="form-input" type="text" name="Card Number" placeholder="Card Number" required>
-
-            <h6>Expiry</h6>
-            <select class="list">
-                <option value="jan">Jan</option>
-                <option value="Feb">Feb</option>
-                <option value="Mar">Mar</option>
-                <option value="Apr">Apr</option>
-                <option value="May">May</option>
-                <option value="jun">Jun</option>
-                <option value="jul">Jul</option>
-                <option value="Aug">Aug</option>
-                <option value="Sep">Sep</option>
-                <option value="Oct">Oct</option>
-                <option value="Nov">Nov</option>
-                <option value="Dec">Dec</option>
-            </select>
-            <select class="list">
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-            </select>
-            <input class="cvv-list" type="text" name="CVV" value="CVV">
-            <br><br>
-            <h5>Order Summary</h5>
-            <div class="summary">
-                <div class="t-shirt">
-                    <p>Anvil L/S Crew Neck - Grey</p>
-                    <p>22.15$</p>
-                </div>
-                <div class="total">
-                    <p>Total</p>
-                    <p>22.15$</p>
-                </div>
+                    <h5>Account Information</h5>
+                    <div>
+                        <input class="form-input" type="email" name="" required><br>
+                        <label>EMAIL</label>
+                    </div>
+                    <div>
+                        <input class="form-input" type="text" name="" required>
+                        <label>Phone Number</label>
+                    </div>
+                    <!-- <br><br> -->
+                    <h5>Shipping Address</h5>
+                    <div>
+                        <input class="form-input" type="text" name="" required>
+                        <label>Address</label>
+                    </div>
+                    <div>
+                        <input class="form-input" type="text" name="" required>
+                        <label>CITY</label>
+                    </div>
+                    <div class="postal-input">
+                        <input type="text" name="" required>
+                        <label>State/Province</label>
+                    </div>
+                    <div class="postal-input">
+                        <input type="text" name="" required>
+                        <label>Zip/Postal Code</label>
+                    </div>
+                    <h6>Country</h6>
+                    <select class="drop-down">
+                        <option value="United States">United States</option>
+                        <option value="Canada">Canada</option>
+                    </select>
+                    <h5>Billing Address</h5>
+                    <input type="checkbox" id = "checkbox">
+                    Use different billing address<br>
             </div>
-            <div class="adding"><input type="submit" value="PLACE ORDER" class="place-order"></div>
-            </form>
+
+            <div class="payment">
+                <h5>Payment Method</h5>
+                <div>
+                    <input class="form-input" type="text" name="" required>
+                    <label class="card">Cardholder Name</label>
+                </div>
+                <div>
+                    <input class="form-input" type="text" name="" required>
+                    <label class="number">Card Number</label>
+                </div>
+                <h6>Expiry</h6>
+                <select class="list">
+                    <option value="jan">Jan</option>
+                    <option value="Feb">Feb</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Apr">Apr</option>
+                    <option value="May">May</option>
+                    <option value="jun">Jun</option>
+                    <option value="jul">Jul</option>
+                    <option value="Aug">Aug</option>
+                    <option value="Sep">Sep</option>
+                    <option value="Oct">Oct</option>
+                    <option value="Nov">Nov</option>
+                    <option value="Dec">Dec</option>
+                </select>
+                <select class="list">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </select>
+                <div id ="cvv">
+                    <input class="cvv-list" type="text" name="" required>
+                    <label>CVV</label>
+                </div>
+                <br><br>
+                <h5>Order Summary</h5>
+                <div class="summary">
+                    <div class="t-shirt">
+                        <p>Anvil L/S Crew Neck - Grey</p>
+                        <p>22.15$</p>
+                    </div>
+                    <div class="total">
+                        <p>Total</p>
+                        <p>22.15$</p>
+                    </div>
+                </div>
+                <div class="adding"><input type="submit" value="PLACE ORDER" class="place-order"></div>
+                </form>
+            </div>
         </div>
 
 
