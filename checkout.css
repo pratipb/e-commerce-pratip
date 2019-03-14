@@ -203,6 +203,20 @@ form div label {
     top: 10px;
 }
 
+.email {
+    text-align: center;
+}
+
+.border {
+    position: relative;
+    top: -45px;
+    display: inline-block;
+    height: 2px;
+    width: 0;
+    background: black;
+    transition: all ease-in-out .5s;
+}
+
 form input:focus~label, .box input:valid~label {
     top: -12px;
     left: 0;
@@ -211,7 +225,14 @@ form input:focus~label, .box input:valid~label {
 }
 
 form input:focus, .box input:valid {
+    /* transition: all ease-in-out .1s; */
+    /* display: inline-block; */
     border-bottom: 2px solid black;
+    /* transition: all ease-in-out 2s; */
+}
+
+form input:focus~.border {
+    width: 100%;
 }
 
 .payment input:focus~label, .payment input:valid~label {
@@ -230,13 +251,24 @@ form input:focus, .box input:valid {
     /* width:40%    */
 }
 
-form  select:focus {
+form select:focus {
     border-bottom: 2px solid black;
 }
 
 .payment select:focus {
     border-bottom: 2px solid black;
 }
+
+.payment #cvv input:focus~label, .payment #cvv input:valid~label {
+    top: -15px;
+    left: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.payment #cvv input:focus, .payment #cvv input:valid {
+
+}border-bottom: 2px solid black;
 
 @media (max-width:767px) {
     header {

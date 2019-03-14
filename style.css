@@ -1,14 +1,18 @@
 body {
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
 header {
-    /* display: flex; */
     text-align: center;
-    /* justify-content: space-around; */
     position: relative;
+    grid-area: 1 / 1 / 2 / 3;
 }
 
 header>p {
@@ -35,6 +39,10 @@ header img {
     bottom: 10px;
 }
 
+nav {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
 .menu-list {
     justify-content: center;
     display: flex;
@@ -53,16 +61,20 @@ header img {
 }
 
 .mens-img {
-    object-fit: contain;
+    object-fit: cover;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    height: 350px;
+    /* max-width: 100%; */
     width: 100%;
 }
 
 .mens-wear {
     text-align: center;
-    height: 38em;
+    grid-area: 3 / 1 / 4 / 3;
+    /* height: 38em; */
+    margin-bottom: 50px;
 }
 
 .mens-wear h3 {
@@ -77,16 +89,20 @@ header img {
 }
 
 .ladies-img {
-    object-fit: contain;
+    object-fit: cover;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+    height: 350px;
+    /* max-width: 100%; */
     width: 100%;
 }
 
 .ladies-wear {
     text-align: center;
-    height: 38em;
+    grid-area: 4 / 1 / 5 / 3;
+    /* height: 38em; */
+    margin-bottom: 50px;
 }
 
 .ladies-wear h3 {
@@ -94,37 +110,47 @@ header img {
     /* height: 34em; */
 }
 
-.tshirt {
-    display: flex;
-}
-
-.mens-tshirt {
-    display: inline;
-}
-
 .tshirt-men {
-    object-fit: contain;
-    width: 50%;
+    text-align: center;
+    /* display: flex; */
+    grid-area: 5 / 1 / 6 / 2;
 }
 
-.tshirt-ladies {
-    object-fit: contain;
-    width: 50%;
+.tshirt-men img {
+    object-fit: cover;
+    display: block;
+    /* margin-left: 4em; */
+    /* margin-right: auto; */
+    height: 100%;
+    max-width: 100%;
 }
 
-.catalog {
-    display: flex;
-    justify-content: space-around;
-    height: 5em;
+.tshirt-men h3 {
+    height: 3em;
 }
 
-.shop {
-    display: flex;
-    justify-content: space-around;
+.tshirt-women {
+    text-align: center;
+    grid-area: 5 / 2 / 6 / 3;
+    /* margin-right: 4em; */
+}
+
+.tshirt-women img {
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: 4em;
+    height: 100%;
+    max-width: 100%;
+}
+
+.tshirt-women h3 {
+    height: 3em;
 }
 
 footer {
     text-align: center;
+    grid-area: 6 / 1 / 7 / 3;
 }
 
 footer a {
@@ -144,42 +170,46 @@ footer p {
     nav {
         display: none;
     }
-    header {
+    /* header {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .mens-wear {
-        height: 17em;
-    }
-    .ladies-wear {
-        height: 17em;
-    }
+    } */
     header p {
         display: inline;
         position: absolute;
-        left: 0;                                                                    
+        left: 0;
+    }
+    .tshirt-men img {
+        object-fit: cover;
+        display: block;
+        /* margin-left: 4em; */
+        margin-right: auto;
+        height: 59%;
+        max-width: 100%;
+    }
+    .tshirt-women {
+        margin-right: 0;
+        height: 16.5em;
+    }
+    .tshirt-men {
+        height: 28em;
     }
 }
 
 @media all and (min-width:500px) and (max-width:800px) {
-    .mens-wear {
-        height: 23em;
-    }
-    .ladies-wear {
-        height: 23em;
-    }
     body {
-        width: 62em;
-    }
-    nav {
-        display: flex;
-        justify-content: center;
+        /* width: 85em; */
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
     }
     .menu-list {
-        justify-content: space-around;
+        justify-content: center;
         display: flex;
         list-style-type: none;
         margin-top: 4em;
+        padding: 0 30em 0 4em;
+        width: 40em;
     }
 }
