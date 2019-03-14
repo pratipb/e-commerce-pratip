@@ -267,8 +267,8 @@ form select:focus {
 }
 
 .payment #cvv input:focus, .payment #cvv input:valid {
-
-}border-bottom: 2px solid black;
+    border-bottom: 2px solid black;
+}
 
 @media (max-width:767px) {
     header {
